@@ -1,0 +1,41 @@
+{
+  "name": "virtual-gym",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js",
+    "build":"cd frontend && npm run build",
+    "install-client":"cd frontend && npm install",
+    "heroku-postbuild":"npm run install-client && npm run build",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.generalassemb.ly/ghadeeralwafi/virtual-gym.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "admin-bro": "^2.2.6",
+    "admin-bro-expressjs": "^2.0.4",
+    "admin-bro-mongoose": "^0.5.1",
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.4.1",
+    "connect-flash": "^0.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-formidable": "^1.2.0",
+    "express-validator": "^6.4.0",
+    "formidable": "^1.2.2",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "moment": "^2.24.0",
+    "mongoose": "^5.9.9",
+    "react-moment-countdown": "^0.4.0",
+    "nodemailer": "^6.4.6",
+    "react-router-dom": "^5.1.2"
+  }
+}
